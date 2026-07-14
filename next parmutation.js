@@ -1,7 +1,8 @@
-var nextPermutation = function(nums){
-    let i = nums.lenght - 2;
 
-    while(i>=0 && nums[i]=== nums[i+1]){
+   var nextPermutation = function(nums) {
+    let i = nums.length - 2;
+
+    while(i>=0 && nums[i] >= nums[i+1]){
         i--
     }
 
@@ -22,5 +23,6 @@ var nextPermutation = function(nums){
       [  nums[left],nums[right]] = [nums[right],nums[left]];
       left++;
       right--
-    }
-}
+    };
+    
+};
